@@ -101,6 +101,7 @@ namespace RemoveRepeatWord
             this.ClientSize = new System.Drawing.Size(428, 218);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Remove Repeat Word";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

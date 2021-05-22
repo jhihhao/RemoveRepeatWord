@@ -9,7 +9,7 @@ namespace RemoveRepeatWord
 {
     public partial class Form1 : Form
     {
-        public string softVersion = " v0.0.3";
+        public string softVersion = " v0.0.4";
         public string fileContent = string.Empty;
         public string filePath = string.Empty;
         public string inputFileName = string.Empty;
