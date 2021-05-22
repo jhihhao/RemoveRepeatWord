@@ -1,0 +1,30 @@
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\bin\Debug\netcoreapp3.1\RemoveRepeatWord.exe
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\bin\Debug\netcoreapp3.1\RemoveRepeatWord.deps.json
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\bin\Debug\netcoreapp3.1\RemoveRepeatWord.runtimeconfig.json
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\bin\Debug\netcoreapp3.1\RemoveRepeatWord.runtimeconfig.dev.json
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\bin\Debug\netcoreapp3.1\RemoveRepeatWord.dll
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\bin\Debug\netcoreapp3.1\RemoveRepeatWord.pdb
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.csprojAssemblyReference.cache
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.Form1.resources
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.csproj.GenerateResource.cache
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.AssemblyInfoInputs.cache
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.AssemblyInfo.cs
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.csproj.CoreCompileInputs.cache
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.dll
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.pdb
+C:\Users\Jhih\Desktop\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.genruntimeconfig.cache
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\bin\Debug\netcoreapp3.1\RemoveRepeatWord.exe
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\bin\Debug\netcoreapp3.1\RemoveRepeatWord.deps.json
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\bin\Debug\netcoreapp3.1\RemoveRepeatWord.runtimeconfig.json
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\bin\Debug\netcoreapp3.1\RemoveRepeatWord.runtimeconfig.dev.json
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\bin\Debug\netcoreapp3.1\RemoveRepeatWord.dll
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\bin\Debug\netcoreapp3.1\RemoveRepeatWord.pdb
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.csprojAssemblyReference.cache
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.Form1.resources
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.csproj.GenerateResource.cache
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.AssemblyInfoInputs.cache
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.AssemblyInfo.cs
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.csproj.CoreCompileInputs.cache
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.dll
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.pdb
+C:\Users\Jhih\Desktop\New folder (3)\C#\Constructor\RemoveRepeatWord\obj\Debug\netcoreapp3.1\RemoveRepeatWord.genruntimeconfig.cache
