@@ -3,17 +3,17 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace RemoveRepeatWord
 {
     public partial class Form1 : Form
     {
-        public string softVersion = " v0.0.2";
+        public string softVersion = " v0.0.3";
         public string fileContent = string.Empty;
         public string filePath = string.Empty;
         public string inputFileName = string.Empty;
+        public string fileEncoding = string.Empty;
         public Form1()
         {
             InitializeComponent();
@@ -35,17 +35,18 @@ namespace RemoveRepeatWord
 
                 Stream fs = File.OpenRead(openFileDialog.FileName);
 
-                var detectedEncoding = DetectFileEncoding(fs);
+                fileEncoding = DetectFileEncoding(fs);
                 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                if (detectedEncoding == "ISO-8859-1")
+                if (fileEncoding == "ISO-8859-1")
                 {
                     // Big-5
                     using StreamReader reader = new StreamReader(openFileDialog.FileName, Encoding.GetEncoding(950), true);
                     fileContent = reader.ReadToEnd();
+
                 }
                 else
                 {
-                    using StreamReader reader = new StreamReader(openFileDialog.FileName, Encoding.GetEncoding(detectedEncoding), true);
+                    using StreamReader reader = new StreamReader(openFileDialog.FileName, Encoding.GetEncoding(fileEncoding), true);
                     fileContent = reader.ReadToEnd();
                 }
             }
@@ -85,8 +86,17 @@ namespace RemoveRepeatWord
                 return;
             }
             var result = string.Join("", fileContent.Distinct());
-            using StreamWriter file = new StreamWriter($"{filePath}{inputFileName}_RemoveRepeatWord.txt");
-            file.WriteLine(result);
+            if (fileEncoding == "ISO-8859-1")
+            {
+                using StreamWriter file = new StreamWriter($"{filePath}{inputFileName}_RemoveRepeatWord.txt", false, Encoding.GetEncoding("big5"));
+                file.WriteLine(result);
+            }
+            else
+            {
+                using StreamWriter file = new StreamWriter($"{filePath}{inputFileName}_RemoveRepeatWord.txt");
+                file.WriteLine(result);
+            }
+
             tbResult.Text = "已完成";
             tbResult.BackColor = Color.LightGreen;
         }
