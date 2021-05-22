@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace RemoveRepeatWord
 {
     public partial class Form1 : Form
     {
-        public string softVersion = " v0.0.1";
+        public string softVersion = " v0.0.2";
         public string fileContent = string.Empty;
         public string filePath = string.Empty;
         public string inputFileName = string.Empty;
@@ -23,30 +20,75 @@ namespace RemoveRepeatWord
             Text += softVersion;
         }
 
-        private void btnOpenTextFile_Click(object sender, EventArgs e)
+        private void BtnOpenTextFile_Click(object sender, EventArgs e)
         {
+            tbResult.Text = string.Empty;
+            tbResult.BackColor = Color.White;
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 tbFilePath.Text = openFileDialog.FileName;
                 inputFileName = openFileDialog.SafeFileName.Replace(".txt", "");
                 filePath = tbFilePath.Text.Replace(openFileDialog.SafeFileName,"");
 
-                var fileStream = openFileDialog.OpenFile();
+                Stream fs = File.OpenRead(openFileDialog.FileName);
 
-                using (StreamReader reader = new StreamReader(fileStream))
+                var detectedEncoding = DetectFileEncoding(fs);
+                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                if (detectedEncoding == "ISO-8859-1")
                 {
+                    // Big-5
+                    using StreamReader reader = new StreamReader(openFileDialog.FileName, Encoding.GetEncoding(950), true);
+                    fileContent = reader.ReadToEnd();
+                }
+                else
+                {
+                    using StreamReader reader = new StreamReader(openFileDialog.FileName, Encoding.GetEncoding(detectedEncoding), true);
                     fileContent = reader.ReadToEnd();
                 }
             }
         }
-
-        private void btnRemoveRepeatWord_Click(object sender, EventArgs e)
+        public string DetectFileEncoding(Stream fileStream)
         {
+            var Utf8EncodingVerifier = Encoding.GetEncoding("utf-8", new EncoderExceptionFallback(), new DecoderExceptionFallback());
+            using (var reader = new StreamReader(fileStream, Utf8EncodingVerifier,
+                   detectEncodingFromByteOrderMarks: true, leaveOpen: true, bufferSize: 1024))
+            {
+                string detectedEncoding;
+                try
+                {
+                    while (!reader.EndOfStream)
+                    {
+                        var line = reader.ReadLine();
+                    }
+                    detectedEncoding = reader.CurrentEncoding.BodyName;
+                }
+                catch (Exception e)
+                {
+                    // Failed to decode the file using the BOM/UT8. 
+                    // Assume it's local ANSI
+                    detectedEncoding = "ISO-8859-1";
+                }
+                // Rewind the stream
+                fileStream.Seek(0, SeekOrigin.Begin);
+                return detectedEncoding;
+            }
+        }
+
+        private void BtnRemoveRepeatWord_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbFilePath.Text))
+            {
+                MessageBox.Show("請選擇檔案");
+                return;
+            }
             var result = string.Join("", fileContent.Distinct());
             using StreamWriter file = new StreamWriter($"{filePath}{inputFileName}_RemoveRepeatWord.txt");
             file.WriteLine(result);
+            tbResult.Text = "已完成";
+            tbResult.BackColor = Color.LightGreen;
         }
     }
 }

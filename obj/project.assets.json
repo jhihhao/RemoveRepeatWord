@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jhih\\Desktop\\New folder (3)\\C#\\Constructor\\RemoveRepeatWord\\RemoveRepeatWord.csproj",
+      "projectUniqueName": "C:\\Users\\Jhih\\Desktop\\RemoveRepeatWord\\RemoveRepeatWord.csproj",
       "projectName": "RemoveRepeatWord",
-      "projectPath": "C:\\Users\\Jhih\\Desktop\\New folder (3)\\C#\\Constructor\\RemoveRepeatWord\\RemoveRepeatWord.csproj",
+      "projectPath": "C:\\Users\\Jhih\\Desktop\\RemoveRepeatWord\\RemoveRepeatWord.csproj",
       "packagesPath": "C:\\Users\\Jhih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jhih\\Desktop\\New folder (3)\\C#\\Constructor\\RemoveRepeatWord\\obj\\",
+      "outputPath": "C:\\Users\\Jhih\\Desktop\\RemoveRepeatWord\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jhih\\AppData\\Roaming\\NuGet\\NuGet.Config",

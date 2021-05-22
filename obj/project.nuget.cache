@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9NN+S9ArCW5vS5PUiwRTSLptmootzIvkE+flzGBxuGDFb4k+uLvERTB0zUiDTZfou2qyP9hC7JDy8a+R74VqMg==",
+  "dgSpecHash": "1npOzjid26NWLib7/LI9pDEot0lgCxtJSFcudH0emvjaR24fSGSVSTnuOIpmex+Mc3MzhHmFsPQK06DrEZs0sQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jhih\\Desktop\\New folder (3)\\C#\\Constructor\\RemoveRepeatWord\\RemoveRepeatWord.csproj",
+  "projectFilePath": "C:\\Users\\Jhih\\Desktop\\RemoveRepeatWord\\RemoveRepeatWord.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
